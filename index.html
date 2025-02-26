@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Ñero Run</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">RUN ÑERO RUN</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#about" class="nav-link">Acerca</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Características</a></li>
+                    <li class="nav-item"><a href="#developers" class="nav-link">Desarrolladores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="Imagenes/RUN ÑERO RUN.png" alt="Logo Run Ñero Run" class="mb-3">
+        <p class="lead">Un ñero, una ciudad implacable y un día que sobrevivir.</p>
+        <a href="#about" class="btn">Conoce más</a>
+    </section>
+
+    <!-- Acerca del Juego -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="col-md-6">
+                <h2>Acerca del Juego</h2>
+                <p>Run Ñero Run es un juego runner inspirado en Bogotá, donde esquivarás obstáculos urbanos y demostrarás tu habilidad.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="Imagenes/portada.png" alt="Gameplay" class="img-fluid">
+            </div>
+        </div>
+        <h3 class="text-center mt-4">Personajes</h3>
+        <div id="personajesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <img src="Imagenes/personaje1.png" class="d-block mx-auto" alt="Personaje 1" style="height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/personaje2.png" class="d-block mx-auto" alt="Personaje 2"  style="height: 500px;">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#personajesCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#personajesCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section id="features" class="py-5 text-center" >
+        <div class="container" id="features">
+            <h2 style="margin-left: 50%; margin-bottom: 80px;">Características</h2>
+            <div class="space-around row">
+                <div class="col-md-4"  style="width: 365px; align-content: center;">
+                    <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#feature-text-1">
+                        <img src="Imagenes/estrella.svg" class="feature-icon" alt="Icono 1">
+                    </button>
+                    <h3>Gameplay</h3>
+                    <div id="feature-text-1" class="collapse">
+                        <p>Evitar ser atrapado mientras superas escenarios desafiantes en una vista lateral 3D.</p>
+                        <button class="btn btn-sm btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#feature-text-1">Cerrar</button>
+                    </div>
+                </div>
+                <div class="col-md-4" style="width: 365px; align-content: center;">
+                    <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#feature-text-2">
+                        <img src="Imagenes/alas.svg" class="feature-icon" alt="Icono 2">
+                    </button>
+                    <h3>Estilo Urbano</h3>
+                    <div id="feature-text-2" class="collapse">
+                        <p>Representar de manera humorística la vida urbana en Bogotá con escenarios icónicos y personajes auténticos.</p>
+                        <button class="btn btn-sm btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#feature-text-2">Cerrar</button>
+                    </div>
+                </div>
+                <div class="col-md-4" style="width: 365px; align-content: center;">
+                    <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#feature-text-3">
+                        <img src="Imagenes/corona.svg" class="feature-icon" alt="Icono 3">
+                    </button>
+                    <h3>Emición</h3>
+                    <div id="feature-text-3" class="collapse">
+                        <p>Los jugadores encontrarán tensión y frenetismo constante.</p>
+                        <button class="btn btn-sm btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#feature-text-3">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desarrolladores -->
+    <section id="developers" class="py-5">
+        <div class="container text-center">
+            <h2 style="margin-right: 50%; margin-bottom: 80px;">Desarrolladores</h2>
+            <div class="d-flex flex-column align-items-center">
+                <div class="dev-card" style="margin-right: 200px;">
+                    <div class="dev-frame">
+                        <img src="Imagenes/Micahel-foto-portafolio.png" alt="Desarrollador 1" class="img-fluid">
+                    </div>
+                    <div class="developer-container">
+                        <h3 class="text-purple">DESARROLLADOR 1</h3>
+                        <p>Función/Puesto</p>
+                    </div>
+                </div>
+                <div class="dev-card text-center" style="margin-left: 200px;">
+                    <div style="align-items: center;">
+                        <h3 class="text-gold">DESARROLLADOR 2</h3>
+                        <p>Función/Puesto</p>
+                    </div>
+                    <div class="dev-frame yellow-frame">
+                        <img src="dev2.jpg" alt="Desarrollador 2" class="img-fluid">
+                    </div>
+                    
+                </div>
+                <div class="dev-card text-center" style="margin-right: 200px;"> 
+                    <div class="dev-frame">
+                        <img src="dev3.jpg" alt="Desarrollador 3" class="img-fluid">
+                    </div>
+                    <div>
+                        <h3 class="text-purple">DESARROLLADOR 3</h3>
+                        <p>Función/Puesto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Run Ñero Run. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
